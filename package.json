@@ -1,0 +1,27 @@
+{
+  "name": "treinamento-03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "help": "rollup --help",
+    "build:dev": "npx rollup ./src/main.js --file ./build/bundle.js --format es",
+    "build": "npx rollup --config",
+    "watch": "npx rollup --config --watch",
+    "dev": "npx rollup --config --environment NODE_ENV:development",
+    "prod": "npx rollup --config --environment NODE_ENV:production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.2",
+    "@rollup/plugin-replace": "^3.0.1",
+    "lodash": "^4.17.21",
+    "rollup": "^2.62.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
