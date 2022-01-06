@@ -5,14 +5,21 @@
   "main": "index.js",
   "scripts": {
     "help": "rollup --help",
-    "build:dev": "npx rollup ./src/main.js --file ./build/bundle.js --format es",
-    "build": "npx rollup --config",
+    "bundle": "npx rollup --config",
     "watch": "npx rollup --config --watch",
     "dev": "npx rollup --config --environment NODE_ENV:development",
     "prod": "npx rollup --config --environment NODE_ENV:production"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhenriquedev/rollup-basic-config.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhenriquedev/rollup-basic-config/issues"
+  },
+  "homepage": "https://github.com/jhenriquedev/rollup-basic-config#readme",
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.7",
